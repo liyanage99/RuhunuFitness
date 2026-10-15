@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-black text-white antialiased font-sans; }
+  :focus-visible { @apply outline outline-2 outline-offset-2 outline-brand; }
+  ::selection { @apply bg-brand text-black; }
+}
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-7xl px-5 sm:px-8; }
+  .btn { @apply inline-flex items-center justify-center rounded-full px-7 py-3.5 font-bold transition duration-300 active:scale-95; }
+  .btn-primary { @apply btn bg-brand text-black hover:bg-white hover:shadow-[0_0_30px_rgba(34,229,92,.45)]; }
+  .btn-outline { @apply btn border-2 border-white/80 text-white hover:border-brand hover:text-brand; }
+  .heading { @apply font-display uppercase leading-[0.95] tracking-tight; }
+  .input { @apply w-full rounded-lg border border-white/20 bg-charcoal px-4 py-3 text-white placeholder:text-white/40 transition focus:border-brand focus:outline-none; }
+}
+@keyframes rise { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+.hero-rise { animation: rise .9s cubic-bezier(.2,.7,.2,1) both; }
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal, .hero-rise { opacity: 1; transform: none; transition: none; animation: none; }
+}
