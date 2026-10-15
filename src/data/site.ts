@@ -1,5 +1,5 @@
 export const site = {
-  name: "IronPulse Fitness",
+  name: "Ruhunu Fitness",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://ironpulse-fitness.vercel.app",
   description: "IronPulse Fitness is a premium gym in Colombo with expert trainers, 24 classes a week and flexible memberships. Book a free trial today.",
   phone: "+94 77 123 4567",
