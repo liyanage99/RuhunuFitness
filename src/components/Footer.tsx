@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="border-t border-white/10 bg-charcoal">
       <div className="container-x grid gap-10 py-14 md:grid-cols-4">
         <div className="md:col-span-2">
-          <p className="heading text-3xl">Iron<span className="text-brand">Pulse</span></p>
+          <p className="heading text-3xl">රුහුණු<span className="text-brand">Fitness</span></p>
           <p className="mt-4 max-w-sm text-white/60">Train hard, recover well and get stronger with coaches who know your name.</p>
         </div>
         <div>
