@@ -1,4 +1,4 @@
-# IronPulse Fitness
+# Ruhunu Fitness
 
 Next.js 14 (App Router), TypeScript, Tailwind CSS. No database.
 
